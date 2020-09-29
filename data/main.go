@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"godata/data/bubble"
+	"godata/data/insertion"
 	"godata/data/selection"
 )
 
@@ -16,4 +17,8 @@ func main() {
 	fmt.Println("not sorted", arrayTwo)
 	selection.SelectionSort(arrayTwo)
 	fmt.Println("selectionsort sorted", arrayTwo)
+	arrayThree := []int{2,4,6,5,3,1}
+	fmt.Println("not sorted", arrayThree)
+	insertion.InsertionSort(arrayThree)
+	fmt.Println("insertion sorted", arrayThree)
 }
